@@ -1,0 +1,52 @@
+[debug] [2021-08-31T08:00:11.462Z] ----------------------------------------------------------------------
+[debug] [2021-08-31T08:00:11.465Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-31T08:00:11.466Z] CLI Version:   9.16.6
+[debug] [2021-08-31T08:00:11.466Z] Platform:      win32
+[debug] [2021-08-31T08:00:11.466Z] Node Version:  v12.18.3
+[debug] [2021-08-31T08:00:11.469Z] Time:          Tue Aug 31 2021 18:00:11 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-08-31T08:00:11.470Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-31T08:00:11.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-31T08:00:11.534Z] > authorizing via signed-in user (vicky.duvasi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\React\Projects\Messenger-clone\facebook-messenger-clone
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using facebook-messenger-clone-d9380. 
+[debug] [2021-08-31T08:00:18.502Z] > refreshing access token with scopes: []
+[debug] [2021-08-31T08:00:18.502Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-31T08:00:19.250Z] <<< HTTP RESPONSE 400 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 31 Aug 2021 08:00:22 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-31T08:00:19.255Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-messenger-clone-d9380 [none]
+[debug] [2021-08-31T08:00:19.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/facebook-messenger-clone-d9380 401
+[debug] [2021-08-31T08:00:19.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/facebook-messenger-clone-d9380 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2021-08-31T08:00:19.469Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-08-31T08:00:19.673Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Prathyusha Vikram\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project facebook-messenger-clone-d9380. Please make sure the project exists and your account has permission to access it.
